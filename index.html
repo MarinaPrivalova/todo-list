@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Marina Privalova">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="icon" href="#" type="image/x-icon">
+  <title>ToDo-List</title>
+</head>
+<body class="page">
+  <header class="header"></header>
+  <main class="content">
+    <h1 class="content__title">to do list</h1>
+  </main>
+  <template class="template-task">
+    <li class="task">
+      <span class="tast__text"></span>
+      <button class="task__btn task__btn_type_copy" type="button"></button>
+      <button class="task__btn task__btn_type_delete" type="button"></button>
+    </li>
+  </template>
+  <template class="template-form">
+    <form class="form">
+      <input class="form__input" type="text" placeholder="Новое дело...">
+      <input class="form__submit" type="submit" value="Добавить">
+    </form>
+  </template>
+  <template class="template-list">
+    <ul class="checklist"></ul>
+  </template>
+  <script type="module" src="./scripts/index.js"></script>
+</body>
+</html>

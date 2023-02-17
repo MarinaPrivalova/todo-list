@@ -1,0 +1,104 @@
+@import url(./vendor/normalize.css);
+@import url(./fonts/fonts.css);
+
+.page {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.header {
+  width: 100%;
+  padding-top: 80px;
+  border-bottom: 1px solid #5e5e5e;
+}
+
+.content {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.content__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-top: 60px;
+  font-size: 42px;
+}
+
+.form {
+  margin: 60px auto;
+  display: flex;
+  align-items: center;
+  max-width: 727px;
+}
+
+.form__input {
+  margin: 0;
+  padding: 20px 30px;
+  border-radius: 15px;
+  border: 1px #5e5e5e solid;
+  outline: none;
+  width: 100%;
+  font-size: 24px;
+}
+
+.form__submit {
+  margin: 0;
+  padding: 15px 25px;
+  margin-left: 30px;
+  border-radius: 10px;
+  border: 1px #5e5e5e solid;
+  background-color: transparent;
+  font-size: 23px;
+}
+
+.checklist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.task {
+  border: 1px #5e5e5e solid;
+  border-radius: 15px;
+  width: 65%;
+  margin: 0 auto 10px;
+  padding: 20px 30px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.task:last-child {
+  margin-bottom: 0;
+}
+
+.tast__text {
+  width: 90%;
+  margin-right: 30px;
+}
+
+.task__btn {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.task__btn:last-child {
+  margin-right: 0;
+}
+
+.task__btn_type_copy {
+  background-image: url(./img/copy.png);
+}
+
+.task__btn_type_delete {
+  background-image: url(./img/del.png);
+}
