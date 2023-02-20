@@ -5,15 +5,14 @@ import { SectionTasks } from './SectionTasks.js';
 const items = [
   { name: 'Полить цветы' },
   { name: 'Погулять с собакой' },
+  { name: 'Позвонить маме' },
   { name: 'Сделать проектную работу' },
   { name: 'Отдохнуть' },
   { name: 'Прочесть туториал по React' },
-  { name: 'Позвонить маме' },
 ]
 
 const config = {
   selectorTasksContainer: '.content',
-  selectorTasksList: '.checklist',
   selectorTemplateTask: '.template-task',
   selectorTemplateForm: '.template-form',
   selectorTemplateList: '.template-list',
@@ -28,7 +27,6 @@ function addTaskToList(item) {
 	section.addTask(item);
 }
 
-const taskList = document.querySelector(config.selectorTasksList);
 const tasksContainer = document.querySelector(config.selectorTasksContainer);
 
 const form = new Form(config.selectorTemplateForm, addTaskToList);

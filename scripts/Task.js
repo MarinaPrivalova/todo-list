@@ -1,7 +1,8 @@
 export class Task {
-  constructor (template, task) {
+  constructor (template, task, addTaskToList) {
     this._template = template;
     this._name = task.name;
+    this._addTaskToList = addTaskToList;
   }
 
   _getElementFromTemplate() {
@@ -16,7 +17,8 @@ export class Task {
   }
 
   _duplicateTask() {
-
+    const taskName = this._name;
+    this._addTaskToList({ name: taskName });
   }
 
   _addEventListeners() {

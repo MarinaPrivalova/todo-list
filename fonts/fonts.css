@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Shantell Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./ShantellSans-Regular.woff2) format("woff2"),
+    url(./ShantellSans-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Shantell Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./ShantellSans-SemiBold.woff2) format("woff2"),
+    url(./ShantellSans-SemiBold.woff) format("woff");
+}
